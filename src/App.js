@@ -6,6 +6,7 @@ import './App.css';
 import View from './Pages/ViewPost'
 import {AuthContext, FirebaseContext} from'./store/Context'
 import Create from './Pages/Create'
+import Post from './store/PostContext'
 
 /**
  * ?  =====Import Components=====
@@ -26,7 +27,8 @@ function App() {
   
   return (
     <div>
-      
+
+ <Post>   
       <Router>
         <Route exact path='/'>
         <Home />
@@ -45,6 +47,7 @@ function App() {
        </Route>
      
       </Router>
+      </Post> 
     </div>
   );
 }
